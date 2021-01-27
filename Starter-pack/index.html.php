@@ -23,10 +23,10 @@
         <tbody>
             <?php foreach ($dolls as $doll) : ?>
                 <tr>
-                    <td class="name"> <a href="show.php"> <?= $doll['name'] ?></a></td>
+                    <td class="name"> <a href="show.php?id=<?=$doll['id']?>"> <?= $doll['name'] ?></a></td>
                     <td class="collection"><?= $doll['collection'] ?></td>
                     <td class="year-of-birth"><?= $doll['year_of_birth'] ?></td>
-                    <td class="value-dollar"><?= $doll['value_dollar'] ?></td>
+                    <td class="value-dollar">&dollar;<?= $doll['value_dollar'] ?></td>
                     <td><input type="submit" formaction="edit.php?id=<?=$doll['id']?>" name="edit" value="Edit"></td>
                     <td><input type="submit" formaction="delete.php?id=<?=$doll['id']?>" name="delete" value="Delete"></td>
 
