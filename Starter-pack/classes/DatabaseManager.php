@@ -17,7 +17,7 @@ class DatabaseManager
 
     public function __construct(string $host, int $port, string $username, string $password, $charset = "utf8mb4")
     {
-        // TODO: Set any user and password information
+        // Set any user and password information
         $this->host = $host;
         $this->port = $port;
         $this->username = $username;
@@ -29,7 +29,7 @@ class DatabaseManager
     public function connect()
     {
 
-        // TODO: make the connection to the database
+        // make the connection to the database
         // $this->database = null;
         $this->databaseName = "barbie_dolls";
         $dsn = "mysql:host=".$this->host.";dbname=".$this->databaseName.";port=".$this->port.";charset=".$this->charset;

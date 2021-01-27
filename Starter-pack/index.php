@@ -14,10 +14,4 @@ if (isset($_POST['submit'])) {
 
 $dolls = $BarbieInventory->get();
 
-
-
-
 require 'index.html.php';
-
-
-
